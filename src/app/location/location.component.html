@@ -1,0 +1,6 @@
+<h3> Welcome to {{shopName}}</h3>
+
+<div [innerText]="locations" *ngIf="locations > 0"></div>
+<inv-location-list [locations]="locationList"></inv-location-list>
+<button class="btn btn-success me-2" (click)="increseLocation()">Increase Location</button>
+<button class="btn btn-danger" (click)="decreaseLocation()">Decrease Location</button>

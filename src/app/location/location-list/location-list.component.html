@@ -1,0 +1,19 @@
+<label>Location List</label>
+<table class="table">
+    <tr>
+        <th>Location No</th>
+        <th>Location Name</th>
+        <th>Location Address</th>
+        <th>Location Logo</th>
+        <th>Location Created</th>
+        <th>Location Zone</th>
+    </tr>
+    <tr [ngClass]="e?'even':'odd'" *ngFor="let location of locations; let i = index; let e=even; let o=odd;">
+        <td>{{ i }}</td>
+        <td>{{ location.name }}</td>
+        <td>{{ location.address }}</td>
+        <td>{{ location.logo }}</td>
+        <td>{{ location.createdDate }}</td>
+        <td>{{ location.zone }}</td>
+    </tr>
+</table>
